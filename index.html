@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shreya Gautam — Student Portfolio</title>
+  <meta name="description" content="Portfolio of Shreya Gautam — a passionate student showcasing projects, skills, and creative work." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="styles/style.css" />
+</head>
+<body>
+  <!-- ===== Cursor‑follow glow ===== -->
+  <div id="cursor-glow" class="cursor-glow"></div>
+
+  <!-- ===== Navbar ===== -->
+  <nav id="navbar" class="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo">
+        <span class="logo-bracket">&lt;</span>SG<span class="logo-bracket">/&gt;</span>
+      </a>
+      <ul id="nav-menu" class="nav-menu">
+        <li><a href="#hero" class="nav-link active" data-section="hero">Home</a></li>
+        <li><a href="#about" class="nav-link" data-section="about">About</a></li>
+        <li><a href="#skills" class="nav-link" data-section="skills">Skills</a></li>
+        <li><a href="#portfolio" class="nav-link" data-section="portfolio">Portfolio</a></li>
+        <li><a href="#contact" class="nav-link" data-section="contact">Contact</a></li>
+      </ul>
+      <button id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation">
+        <span class="hamburger"></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ===== Hero ===== -->
+  <section id="hero" class="hero">
+    <div class="hero-particles" id="hero-particles"></div>
+    <div class="hero-content">
+      <p class="hero-greeting animate-in">Hello, I'm</p>
+      <h1 class="hero-name animate-in">Shreya <span class="highlight">Gautam</span></h1>
+      <div class="hero-title-wrapper animate-in">
+        <span class="hero-title-prefix">I'm a&nbsp;</span>
+        <span id="typed-text" class="typed-text"></span>
+        <span class="cursor-blink">|</span>
+      </div>
+      <p class="hero-description animate-in">
+        A student passionate about building beautiful digital experiences.
+      </p>
+      <div class="hero-cta animate-in">
+        <a href="#portfolio" class="btn btn-primary">View My Work</a>
+        <a href="#contact" class="btn btn-outline">Get In Touch</a>
+      </div>
+      <div class="hero-socials animate-in">
+        <a href="#" class="social-link" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+        <a href="#" class="social-link" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="#" class="social-link" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#" class="social-link" aria-label="Twitter / X"><i class="fa-brands fa-x-twitter"></i></a>
+      </div>
+    </div>
+    <div class="hero-image animate-in">
+      <div class="profile-ring">
+        <img src="assests/images/profile.png" alt="Shreya Gautam" class="profile-img" />
+      </div>
+    </div>
+    <a href="#about" class="scroll-indicator" aria-label="Scroll down">
+      <span class="scroll-mouse"><span class="scroll-dot"></span></span>
+    </a>
+  </section>
+
+  <!-- ===== About ===== -->
+  <section id="about" class="section about">
+    <div class="container">
+      <h2 class="section-heading"><span class="heading-number">01.</span> About Me</h2>
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <p>
+            Hi! I'm <strong>Shreya Gautam</strong>, a dedicated student with a love for technology and design.
+            I enjoy turning complex problems into simple, elegant, and intuitive solutions.
+          </p>
+          <p>
+            Currently pursuing my studies, I spend most of my time exploring web development,
+            UI/UX design, and creative coding. I believe in continuous learning and love
+            experimenting with new technologies to craft meaningful digital experiences.
+          </p>
+          <p>
+            When I'm not coding, you'll find me sketching ideas, reading books, or exploring
+            the latest trends in tech and design. I'm always open to collaborating on exciting
+            projects and learning from fellow developers.
+          </p>
+        </div>
+        <div class="about-details reveal">
+          <div class="detail-card">
+            <div class="detail-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+            <div>
+              <h4>Education</h4>
+              <p>Currently Studying</p>
+            </div>
+          </div>
+          <div class="detail-card">
+            <div class="detail-icon"><i class="fa-solid fa-location-dot"></i></div>
+            <div>
+              <h4>Location</h4>
+              <p>Nepal</p>
+            </div>
+          </div>
+          <div class="detail-card">
+            <div class="detail-icon"><i class="fa-solid fa-code"></i></div>
+            <div>
+              <h4>Focus</h4>
+              <p>Web Development &amp; Design</p>
+            </div>
+          </div>
+          <div class="detail-card">
+            <div class="detail-icon"><i class="fa-solid fa-heart"></i></div>
+            <div>
+              <h4>Interests</h4>
+              <p>UI/UX, Creative Coding</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Skills ===== -->
+  <section id="skills" class="section skills">
+    <div class="container">
+      <h2 class="section-heading"><span class="heading-number">02.</span> Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-card reveal">
+          <div class="skill-icon"><i class="fa-brands fa-html5"></i></div>
+          <h4>HTML5</h4>
+          <div class="skill-bar"><div class="skill-fill" data-width="90%"></div></div>
+        </div>
+        <div class="skill-card reveal">
+          <div class="skill-icon"><i class="fa-brands fa-css3-alt"></i></div>
+          <h4>CSS3</h4>
+          <div class="skill-bar"><div class="skill-fill" data-width="85%"></div></div>
+        </div>
+        <div class="skill-card reveal">
+          <div class="skill-icon"><i class="fa-brands fa-js"></i></div>
+          <h4>JavaScript</h4>
+          <div class="skill-bar"><div class="skill-fill" data-width="75%"></div></div>
+        </div>
+        <div class="skill-card reveal">
+          <div class="skill-icon"><i class="fa-brands fa-figma"></i></div>
+          <h4>Figma</h4>
+          <div class="skill-bar"><div class="skill-fill" data-width="80%"></div></div>
+        </div>
+        <div class="skill-card reveal">
+          <div class="skill-icon"><i class="fa-brands fa-git-alt"></i></div>
+          <h4>Git</h4>
+          <div class="skill-bar"><div class="skill-fill" data-width="70%"></div></div>
+        </div>
+        <div class="skill-card reveal">
+          <div class="skill-icon"><i class="fa-brands fa-react"></i></div>
+          <h4>React (Learning)</h4>
+          <div class="skill-bar"><div class="skill-fill" data-width="50%"></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Portfolio ===== -->
+  <section id="portfolio" class="section portfolio">
+    <div class="container">
+      <h2 class="section-heading"><span class="heading-number">03.</span> Portfolio</h2>
+      <div class="portfolio-grid">
+        <!-- Project 1 -->
+        <article class="project-card reveal">
+          <div class="project-image">
+            <img src="assests/images/project1.png" alt="Dashboard App" loading="lazy" />
+            <div class="project-overlay">
+              <a href="#" class="project-btn" aria-label="Live Demo"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+              <a href="#" class="project-btn" aria-label="Source Code"><i class="fa-brands fa-github"></i></a>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3>Analytics Dashboard</h3>
+            <p>A responsive data‑visualization dashboard with interactive charts and real‑time data.</p>
+            <div class="project-tags">
+              <span>HTML</span><span>CSS</span><span>JavaScript</span>
+            </div>
+          </div>
+        </article>
+        <!-- Project 2 -->
+        <article class="project-card reveal">
+          <div class="project-image">
+            <img src="assests/images/project2.png" alt="E‑commerce UI" loading="lazy" />
+            <div class="project-overlay">
+              <a href="#" class="project-btn" aria-label="Live Demo"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+              <a href="#" class="project-btn" aria-label="Source Code"><i class="fa-brands fa-github"></i></a>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3>E‑Commerce Store</h3>
+            <p>A modern online store with product filtering, cart functionality, and seamless checkout.</p>
+            <div class="project-tags">
+              <span>HTML</span><span>CSS</span><span>JS</span>
+            </div>
+          </div>
+        </article>
+        <!-- Project 3 -->
+        <article class="project-card reveal">
+          <div class="project-image">
+            <img src="assests/images/project3.png" alt="Mobile App UI" loading="lazy" />
+            <div class="project-overlay">
+              <a href="#" class="project-btn" aria-label="Live Demo"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+              <a href="#" class="project-btn" aria-label="Source Code"><i class="fa-brands fa-github"></i></a>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3>Chat App Concept</h3>
+            <p>A sleek realtime chat application concept with modern UI patterns and micro‑interactions.</p>
+            <div class="project-tags">
+              <span>UI/UX</span><span>Figma</span><span>CSS</span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Contact ===== -->
+  <section id="contact" class="section contact">
+    <div class="container">
+      <h2 class="section-heading"><span class="heading-number">04.</span> Contact</h2>
+      <div class="contact-grid">
+        <div class="contact-info reveal">
+          <h3>Let's work together</h3>
+          <p>Have a project in mind or just want to chat? Feel free to reach out!</p>
+          <div class="contact-details">
+            <div class="contact-item">
+              <i class="fa-solid fa-envelope"></i>
+              <span>shreya@example.com</span>
+            </div>
+            <div class="contact-item">
+              <i class="fa-solid fa-phone"></i>
+              <span>+977‑XXXXXXXXXX</span>
+            </div>
+            <div class="contact-item">
+              <i class="fa-solid fa-location-dot"></i>
+              <span>Nepal</span>
+            </div>
+          </div>
+          <div class="contact-socials">
+            <a href="#" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          </div>
+        </div>
+        <form id="contact-form" class="contact-form reveal" autocomplete="off">
+          <div class="form-group">
+            <input type="text" id="name" name="name" required placeholder=" " />
+            <label for="name">Your Name</label>
+          </div>
+          <div class="form-group">
+            <input type="email" id="email" name="email" required placeholder=" " />
+            <label for="email">Your Email</label>
+          </div>
+          <div class="form-group">
+            <input type="text" id="subject" name="subject" required placeholder=" " />
+            <label for="subject">Subject</label>
+          </div>
+          <div class="form-group">
+            <textarea id="message" name="message" rows="5" required placeholder=" "></textarea>
+            <label for="message">Message</label>
+          </div>
+          <button type="submit" class="btn btn-primary btn-submit" id="submit-btn">
+            Send Message <i class="fa-solid fa-paper-plane"></i>
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Footer ===== -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2026 Shreya Gautam. Crafted with <i class="fa-solid fa-heart heart-icon"></i></p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
